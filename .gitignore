@@ -1,2 +1,10 @@
-_site/
-.sass-cache/
+# Package Managers
+node_modules
+app/_bower_components
+
+# Amazon S3
+aws-credentials.json
+.awspublish-*
+
+# Site Builds
+build
