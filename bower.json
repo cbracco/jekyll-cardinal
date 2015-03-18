@@ -1,0 +1,7 @@
+{
+  "name": "jekyll-cardinal",
+  "private": true,
+  "dependencies": {
+    "cardinal": "~3.1.0"
+  }
+}
