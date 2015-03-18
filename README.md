@@ -1,10 +1,14 @@
 # jekyll-cardinal
 
-A boilerplate for Jekyll using the [Cardinal LESS framework](https://github.com/cbracco/cardinal).
+A boilerplate for [Jekyll](http://jekyllrb.com) using the [Cardinal LESS framework](https://github.com/cbracco/cardinal).
 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Resources](#resources)
+- [Developing](#developing)
+- [Deploying](#deploying)
+- [Known Issues](#known-issues)
 
 # Getting Started
 
@@ -67,5 +71,39 @@ Once you have the above tools installed, you can [clone this repository](http://
 
   *This project uses [BrowserSync](http://www.browsersync.io/) and [xip.io](http://xip.io/) to automatically refresh your web browser on save, and to synchronize file changes and basic browser interactions (scrolling, clicking) across multiple devices. After running `gulp` in the terminal, you will see an “External URL” (e.g. [http://192.168.1.114.xip.io:9999](http://192.168.1.114.xip.io:9999)) that you can use for your various devices. Simply navigate to this URL in the browser of another device connected to your network, and watch your changes and interactions happen across multiple devices at the same time!
 
+## Resources
 
+If you are running Windows on your machine, and you’ve run into problems with the above, then you might find these guides useful:
 
+- [Jekyll on Windows](http://jekyllrb.com/docs/windows/)
+- [Run Jekyll on Windows](http://jekyll-windows.juthilo.com/)
+
+# Developing
+
+After running `gulp`, you should have a development server environment running on your local machine, and you can begin working.
+
+# Publishing
+
+To publish a production-ready version of your project, run the following command(s):
+
+```
+gulp publish
+```
+
+This task will delete any existing builds, build a production-ready version with your latest changes, and spin up a local server for you to test.
+
+Navigate to [http://127.0.0.1.xip.io:9998](http://127.0.0.1.xip.io:9998) in your browser to view your local production build.
+
+# Deploying
+
+Right now, a simple rsync deploy task is included so you can upload a production build to the server of your choice. You will want to modify the [Gulp configuration](https://github.com/cbracco/jekyll-cardinal/blob/master/gulp/config.js#L190) to reflect your real server credentials.
+
+To deploy your project via rsync, run the following command(s):
+
+```
+gulp deploy
+```
+
+# Known Issues
+
+Issues are logged and tracked in using GitHub’s [Issues](https://github.com/BigRoomStudios/bigroomstudios.com/issues) feature in this repo.
