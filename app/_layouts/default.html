@@ -1,7 +1,13 @@
 {% include head/base.html %}
   <div role="document">
+    {% include site/navigation.html nav=site.data.navigation %}
     <div role="main">
+      <div role="banner">
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+      </div>
       {{ content }}
+      <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a></p>
     </div>
   </div>
 {% include foot/base.html %}

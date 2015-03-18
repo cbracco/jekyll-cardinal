@@ -2,5 +2,5 @@
 # Site Navigation
 #
 
-- text: "Home"
+- title: "Home"
   url: "/"

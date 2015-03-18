@@ -7,8 +7,7 @@ title: "Jekyll Cardinal"
 title_after: > # ignore newlines in this value
   This appears after the title in the SEO snippet for the homepage.
 description: > # ignore newlines in this value
-  I am a description that can be used in various places throughout the website,
-  including the default SEO description.
+  A boilerplate for Jekyll using the Cardinal LESS framework.
 author: "Chris Bracco"
 encoding: "utf-8"
 language: "en-us"
