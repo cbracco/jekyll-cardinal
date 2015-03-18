@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<ul>
+  {% for item in site.posts %}
+  <li>
+    <span>{{ item.date | date: "%b %-d, %Y" }}</span>
+    <h1>
+      <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+    </h1>
+  </li>
+  {% endfor %}
+</ul>
+
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a></p>

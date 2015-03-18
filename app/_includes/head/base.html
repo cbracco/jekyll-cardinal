@@ -1,0 +1,18 @@
+<!DOCTYPE html>{% include head/capture-variables.html %}
+<!--[if lt IE 9]> <html lang="{{ language }}" class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html lang="{{ language }}" class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="{{ language }}" class="no-js"> <!--<![endif]-->
+  <head>
+    {% include head/title-desc.html %}
+    {% include head/meta.html %}
+    {% include head/dns-prefetch.html %}
+    {% include head/open-graph.html %}
+    {% include head/twitter-cards.html %}
+    {% include head/robots.html %}
+    {% include head/canonical.html %}
+    {% include head/favicons.html %}
+    {% include head/styles.html %}
+    {% include head/scripts.html %}
+  </head>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+    {% include head/browse-happy.html %}

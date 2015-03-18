@@ -1,0 +1,24 @@
+<!-- Twitter Cards  -->
+<meta name="twitter:card" content="summary">
+{% if site.twitter.username %}
+<meta name="twitter:site" content="@{{ site.twitter.username }}">
+<meta name="twitter:creator" content="@{{ site.twitter.username }}">
+{% endif %}
+{% if page.title %}
+<meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+<meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+<meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+{% endif %}
+{% if page.description %}
+<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.header_bg_image %}
+<meta name="twitter:image:src" content="{{ site.url }}/assets/images/{{ page.header_bg_image }}">
+{% else %}
+<meta name="twitter:image:src" content="{{ site.url }}/assets/images/logo.png">
+{% endif %}

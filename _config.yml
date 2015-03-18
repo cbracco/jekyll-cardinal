@@ -1,0 +1,43 @@
+#
+# Configuration
+#
+
+# Site
+title: "Jekyll Cardinal"
+title_after: > # ignore newlines in this value
+  This appears after the title in the SEO snippet for the homepage.
+description: > # ignore newlines in this value
+  I am a description that can be used in various places throughout the website,
+  including the default SEO description.
+author: "Chris Bracco"
+encoding: "utf-8"
+language: "en-us"
+
+# Routes
+source: ./app
+destination: ./build
+baseurl: "" # Use if your site is in a subdirectory, e.g. /blog/
+url: "http://127.0.0.1.xip.io:9999"
+root: /
+permalink: /:categories/:title/
+
+# Writing
+markdown: kramdown
+
+# Publishing
+future: true
+show_drafts: true
+limit_posts: 5
+
+# Favicons
+# Use `http://realfavicongenerator.net` to generate them
+favicons:
+  ms_tile_color: "#000000"
+  theme_color: "#ffffff"
+
+# 3rd-party
+twitter:
+  username: cbracco
+google_analytics:
+  id: "XX-XXXXXX-XX"
+  domain: "domain.com"
