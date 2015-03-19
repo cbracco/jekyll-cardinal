@@ -49,11 +49,17 @@ Once you have the above tools installed, you can [clone this repository](http://
 
   ```
   cd path/to/your/projects/folder
-  mkdir bigroomstudios.com; cd bigroomstudios.com
-  git clone https://github.com/BigRoomStudios/bigroomstudios.com.git .
+  mkdir newproject.com && cd newproject.com
+  git clone https://github.com/cbracco/jekyll-cardinal.com.git .
   ```
 
-2. Install project dependencies by running the following command(s):
+2. Create a repo for your new project, then update your the origin remote to point to your new project by running the following command(s):
+
+  ```
+  git remote set-url origin git@github.com:your-username/newproject.com.git
+  ```
+
+3. Install project dependencies by running the following command(s):
 
   ```
   bundle
@@ -61,13 +67,13 @@ Once you have the above tools installed, you can [clone this repository](http://
   bower install
   ```
 
-3. Build the site and spin up a local server by running the following command(s) from your terminal:
+4. Build the site and spin up a local server by running the following command(s) from your terminal:
 
   ```
   gulp
   ```
 
-4. Navigate to [http://127.0.0.1.xip.io:9999](http://127.0.0.1.xip.io:9999) in your browser and begin working!*
+5. Navigate to [http://127.0.0.1.xip.io:9999](http://127.0.0.1.xip.io:9999) in your browser and begin working!*
 
   *This project uses [BrowserSync](http://www.browsersync.io/) and [xip.io](http://xip.io/) to automatically refresh your web browser on save, and to synchronize file changes and basic browser interactions (scrolling, clicking) across multiple devices. After running `gulp` in the terminal, you will see an “External URL” (e.g. [http://192.168.1.114.xip.io:9999](http://192.168.1.114.xip.io:9999)) that you can use for your various devices. Simply navigate to this URL in the browser of another device connected to your network, and watch your changes and interactions happen across multiple devices at the same time!
 
@@ -106,4 +112,4 @@ gulp deploy
 
 # Known Issues
 
-Issues are logged and tracked in using GitHub’s [Issues](https://github.com/BigRoomStudios/bigroomstudios.com/issues) feature in this repo.
+Issues are logged and tracked in using GitHub’s [Issues](https://github.com/cbracco/jekyll-cardinal/issues) feature in this repo.
