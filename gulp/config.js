@@ -23,9 +23,9 @@ module.exports = {
       port: 9999,
       xip: true,
       files: [
-        developmentAssets + '/css/*.css',
-        developmentAssets + '/js/*.js',
-        developmentAssets + '/img/**'
+        developmentAssets + '/styles/*.css',
+        developmentAssets + '/scripts/*.js',
+        developmentAssets + '/images/**'
       ],
       notify: {
         styles: ['display: hidden; padding: 12px; font-family: sans-serif; position: fixed; font-size: 14px; z-index: 10000; left: 50%; bottom: 0; width: 200px; margin: 0; margin-left: -100px; border-top-left-radius: 3px; border-top-right-radius: 3px; color: #fff; text-align: center; background-color: rgb(27, 32, 50);']
@@ -46,7 +46,7 @@ module.exports = {
   // Styles
   styles: {
     src: srcAssets + '/styles/main.less',
-    dest: developmentAssets + '/css',
+    dest: developmentAssets + '/styles',
     // Autoprefixer
     autoprefixer: {
       browsers: [
@@ -71,11 +71,11 @@ module.exports = {
     // bundle config in the list below
     bundleConfigs: [{
       entries: './' + srcAssets + '/scripts/main.js',
-      dest: developmentAssets + '/js',
+      dest: developmentAssets + '/scripts',
       outputName: 'main.js'
     }, {
       entries: './' + srcAssets + '/scripts/head.js',
-      dest: developmentAssets + '/js',
+      dest: developmentAssets + '/scripts',
       outputName: 'head.js'
     }]
   },
@@ -83,7 +83,7 @@ module.exports = {
   copy:{
     images: {
       src: srcAssets + '/images/**/*',
-      dest: developmentAssets + '/img'
+      dest: developmentAssets + '/images'
     }
   },
   // Jekyll
@@ -120,20 +120,20 @@ module.exports = {
   // Optimize
   optimize: {
     styles: {
-      src: developmentAssets + '/css/*.css',
-      dest: productionAssets + '/css/',
+      src: developmentAssets + '/styles/*.css',
+      dest: productionAssets + '/styles/',
       options: {
         keepSpecialComments: 0
       }
     },
     scripts: {
-      src: developmentAssets + '/js/*.js',
-      dest: productionAssets + '/js/',
+      src: developmentAssets + '/scripts/*.js',
+      dest: productionAssets + '/scripts/',
       options: {}
     },
     images: {
-      src: developmentAssets + '/img/**/*.{jpg,jpeg,png,gif,svg}',
-      dest: productionAssets + '/img/',
+      src: developmentAssets + '/images/**/*.{jpg,jpeg,png,gif,svg}',
+      dest: productionAssets + '/images/',
       options: {
         optimizationLevel: 5,
         progessive: true,
@@ -153,9 +153,9 @@ module.exports = {
   revision: {
     src: {
       assets: [
-        productionAssets + '/css/*.css',
-        productionAssets + '/js/*.js',
-        productionAssets + '/img/**/*'
+        productionAssets + '/styles/*.css',
+        productionAssets + '/scripts/*.js',
+        productionAssets + '/images/**/*'
       ],
       base: production
     },

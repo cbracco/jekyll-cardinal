@@ -23,7 +23,7 @@
 <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
 {% if page.open_graph_image %}
-<meta content="/assets/images/{{ page.open_graph_image }}" property="og:image">
+<meta content="{{ site.url }}/assets/images/{{ page.open_graph_image }}" property="og:image">
 {% else %}
-<meta content="/assets/images/logo.png" property="og:image">
+<meta content="{{ site.url }}/assets/images/logo.png" property="og:image">
 {% endif %}
