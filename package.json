@@ -1,6 +1,6 @@
 {
   "name": "jekyll-cardinal",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A boilerplate for Jekyll using the Cardinal LESS framework.",
   "private": true,
   "devDependencies": {

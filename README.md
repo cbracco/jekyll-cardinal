@@ -50,7 +50,7 @@ Once you have the above tools installed, you can [clone this repository](http://
   ```
   cd path/to/your/projects/folder
   mkdir newproject.com && cd newproject.com
-  git clone https://github.com/cbracco/jekyll-cardinal.com.git .
+  git clone https://github.com/cbracco/jekyll-cardinal.git .
   ```
 
 2. Create a repo for your new project, then update your the origin remote to point to your new project by running the following command(s):
